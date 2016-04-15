@@ -1,0 +1,39 @@
+html
+  head
+    title= title
+    script.
+      var clearRequest = function() {
+        document.getElementById("request").value="";
+      }
+      var populateRequest = function() {
+        document.getElementById("request").value=!{JSON.stringify(requestCode)};
+      }
+      var clearResponse = function() {
+        document.getElementById("response").value="";
+      }
+  body
+    h1= message
+    form(name='submit-request', method='post')
+      p= "Request:"
+      p
+        textarea(name='request', id='request', rows=10, cols=60).form-control= requestCode
+      p
+        input(type='submit', value='Send Request')
+        input(
+          type='button' 
+          value='Populate Request'
+          onclick="populateRequest()"
+          )
+        input(
+          type='button' 
+          value='Clear Request'
+          onclick="clearRequest()")
+
+    p
+      textarea(name='response', id='response', rows=10, cols=60).form-control= responseCode
+    p
+      input(
+      type='button' 
+      value='Clear Response'
+      onclick='clearResponse()')
+
