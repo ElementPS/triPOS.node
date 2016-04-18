@@ -8,7 +8,9 @@
 
 This repository demonstrates an integration to the triPOS product using the Node.js programming language.  The application is very simple and allows a user to populate a hard coded credit sale request in either XML or JSON format.  The user may then send that request to triPOS for further processing.
 
-![triPOS.node](https://github.com/ElementPS/triPOS.node/blob/master/screenshot.PNG)
+![triPOS.node](https://github.com/ElementPS/triPOS.node/blob/master/screenshot1.png)
+
+![triPOS.node](https://github.com/ElementPS/triPOS.node/blob/master/screenshot2.png)
 
 ##Prerequisites
 
