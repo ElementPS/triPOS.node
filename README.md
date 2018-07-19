@@ -64,7 +64,7 @@ This example shows the JSON request.  Also notice that the value in laneId is 99
 }
 ```
 
-## Step 2:Create message headers
+## Step 2: Create message headers
 
 The tp-authorization header below is only useful while testing as the full set of header information is not provided.  This example will be updated with that information in a future release.  For now refer to the integration guide for more information on constructing the headers needed for a production environment. To see an example, look in `tripos.js`.
 
